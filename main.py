@@ -8,7 +8,7 @@ def get_stream():
     face = cv.CascadeClassifier(cv.data.haarcascades + "haarcascade_frontalface_default.xml")
 
     mask = cv.imread('images/steve_face.jpg')
-    cap = cv.VideoCapture(-1)
+    cap = cv.VideoCapture(1)
 
     if not cap.isOpened():
         print('Error')
